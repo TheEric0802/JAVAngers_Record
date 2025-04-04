@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.List;
 import java.util.UUID;
 
 public class Main {
@@ -37,6 +38,10 @@ public class Main {
         System.out.println(cat.equals(dog));
 
         System.out.println(bird1.equals(bird2));
+
+        Zoo zoo = new Zoo(List.of(dog, cat, bird1, bird2));
+
+        System.out.println(zoo.totalFeedRequirement());
 
     }
 }
